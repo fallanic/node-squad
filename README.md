@@ -4,7 +4,7 @@ node-squad
 Run N functions in parallel.
 When all the functions are finished, N new functions are triggered, until the input data set is drained.
 
-This package is based on the excellent https://github.com/kriskowal/q
+This package is based on the excellent https://github.com/kriskowal/q <br>
 It can be useful for different purpose (avoid api throttle etc.).
 
 
@@ -22,6 +22,8 @@ Configuration options:
 
 - `config.squadSize` : the number of function to run at the same time (10 by default)
 - `config.disableLogs` : yes, you already know what it does (false by default)
+
+Example :
 
         var Q = require('q'),
         Squad = require('node-squad');
