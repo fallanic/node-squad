@@ -42,8 +42,8 @@ Install the module with: `npm install node-squad`
             return jobDeferred.promise;
         },config)
         .then(function(lyrics){
-        console.log('Finished processing all the data');
-        console.log(lyrics);
+            console.log('Finished processing all the data');
+            console.log(lyrics);
         });
     
 To run the example in this repo run `npm install` and then `node ./example/example.js`
