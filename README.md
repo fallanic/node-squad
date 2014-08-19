@@ -1,9 +1,10 @@
 node-squad
 ==========
 
-Run N functions in parallel. 
+Run N functions in parallel.
 When all the functions are finished, N new functions are triggered, until the input data set is drained.
-This package can be useful for different uses (avoid api throttle etc.).
+
+This package can be useful for different purpose (avoid api throttle etc.).
 
 
 ## Getting Started
