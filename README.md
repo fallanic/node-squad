@@ -5,7 +5,7 @@ Run N functions in parallel.
 When all the functions are finished, N new functions are triggered, until the input data set is drained.
 
 This package is based on the excellent https://github.com/kriskowal/q <br>
-It can be useful for different purpose (avoid api throttle etc.).
+It can be used for different purpose (API throttling, rate limiting, etc.).
 
 
 ## Getting Started
