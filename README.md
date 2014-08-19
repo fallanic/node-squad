@@ -4,23 +4,27 @@ node-squad
 Run N functions in parallel.
 When all the functions are finished, N new functions are triggered, until the input data set is drained.
 
-This package can be useful for different purpose (avoid api throttle etc.).
+This package is based on the excellent https://github.com/kriskowal/q
+It can be useful for different purpose (avoid api throttle etc.).
 
 
 ## Getting Started
 Install the module with: `npm install node-squad`
 
 ## Usage
-3 input parameters :
+node-squad accepts 3 input parameters :
 
 - a data set (Array)
 - a function taking one item of the dataset as a parameter (the function must return a result or a promise)
 - the configuration hash (optional)
- config.squadSize : the number of function to run at the same time (10 by default)
- config.disableLogs : yes, you already know what it does (false by default)
+
+Configuration options:
+
+- `config.squadSize` : the number of function to run at the same time (10 by default)
+- `config.disableLogs` : yes, you already know what it does (false by default)
 
         var Q = require('q'),
-        Squad = require('../lib/node-squad.js');
+        Squad = require('node-squad');
         
         //copyright Montell Jordan
         var dataSet = ['This','is','how','we','do','it'];
