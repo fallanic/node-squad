@@ -18,11 +18,36 @@ Install the module with: `npm install node-squad`
  config.squadSize : the number of function to run at the same time (10 by default)
  config.disableLogs : yes, you already know what it does (false by default)
 
-    var Squad = require('node-squad');
+    var Q = require('q'),
+        Squad = require('../lib/node-squad.js');
     
+    //copyright Montell Jordan
+    var dataSet = ['This','is','how','we','do','it'];
+    var config = {
+        squadSize:3,
+        disableLogs: false
+    };
     
+    Squad.run(dataSet,function(item){
+        var jobDeferred = Q.defer();
     
-To run the example in this repo `node ./example/example.js`
+        //waiting randomly
+        var randomWait = Math.floor(Math.random() * 1000) + 1;
+        setTimeout(function(){
+            jobDeferred.resolve(item+'♪');
+        },
+        randomWait);
+    
+        return jobDeferred.promise;
+    },config)
+        .then(function(lyrics){
+        console.log('Finished processing all the data');
+        console.log(lyrics);
+    });
+    
+To run the example in this repo
+`npm install`
+`node ./example/example.js`
 
 Please note this is a firing squad, you won't always have N functions executing at the same time, each function will wait for ALL OF THE OTHER functions of the squad to be finished before starting another batch.
 
