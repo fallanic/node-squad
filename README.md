@@ -48,7 +48,7 @@ Install the module with: `npm install node-squad`
     
 To run the example in this repo run `npm install` and then `node ./example/example.js`
 
-Please note this is a firing squad, you won't always have N functions executing at the same time, each function will wait for ALL OF THE OTHER functions of the squad to be finished before starting another batch.
+Please note this is a firing squad, you won't always have N functions executing at the same time, each function will wait for **ALL OF THE OTHER** functions of the squad to be finished before starting another batch.
 
 That's all folks!
 
