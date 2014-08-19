@@ -32,14 +32,14 @@ Install the module with: `npm install node-squad`
         Squad.run(dataSet,function(item){
             var jobDeferred = Q.defer();
         
-        //waiting randomly
-        var randomWait = Math.floor(Math.random() * 1000) + 1;
-        setTimeout(function(){
-            jobDeferred.resolve(item+'♪');
-        },
-        randomWait);
-    
-        return jobDeferred.promise;
+            //waiting randomly
+            var randomWait = Math.floor(Math.random() * 1000) + 1;
+            setTimeout(function(){
+                jobDeferred.resolve(item+'♪');
+            },
+            randomWait);
+        
+            return jobDeferred.promise;
         },config)
         .then(function(lyrics){
         console.log('Finished processing all the data');
