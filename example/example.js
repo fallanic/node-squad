@@ -21,6 +21,9 @@ Squad.run(dataSet,function(item){
     return jobDeferred.promise;
 },config)
     .then(function(lyrics){
-    console.log('Finished processing all the data');
+    console.log('Finished processing all the data.');
+    console.log('Original dataset : ');
+    console.log(dataSet);
+    console.log('Enhanced dataset : ');
     console.log(lyrics);
 });

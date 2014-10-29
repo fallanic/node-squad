@@ -20,8 +20,9 @@ node-squad accepts 3 input parameters :
 
 Configuration options:
 
-- `config.squadSize` : the number of function to run at the same time (10 by default)
-- `config.disableLogs` : yes, you already know what it does (false by default)
+- `config.squadSize` : the number of function to run at the same time (10 by default).
+- `config.disableLogs` : yes, you already know what it does (false by default).
+- `config.noCopy` : by default, node-squad uses a copy of the array passed as a parameter. Set this to true to use the original array instead of a copy.
 
 Example :
 
