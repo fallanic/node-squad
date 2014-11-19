@@ -1,6 +1,6 @@
 {
   "name": "node-squad",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Run N functions in parallel, and wait for all of them to be finished before starting another batch",
   "author": {
     "name": "Fabien Allanic",
