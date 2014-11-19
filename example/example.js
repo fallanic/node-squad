@@ -5,7 +5,8 @@ var Q = require('q'),
 var dataSet = ['This','is','how','we','do','it'];
 var config = {
     squadSize:3,
-    disableLogs: false
+    disableLogs: false,
+    stopOnReject:true
 };
 
 Squad.run(dataSet,function(item){
