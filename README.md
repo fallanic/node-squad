@@ -23,6 +23,7 @@ Configuration options:
 - `config.squadSize` : the number of function to run at the same time (10 by default).
 - `config.disableLogs` : yes, you already know what it does (false by default).
 - `config.noCopy` : by default, node-squad uses a copy of the array passed as a parameter. Set this to true to use the original array instead of a copy.
+- `config.stopOnReject` : stop the squad or not when a promise is being rejected by a job(true by default). 
 
 Example :
 
